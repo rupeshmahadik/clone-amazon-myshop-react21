@@ -132,6 +132,20 @@ to run this delete this in package.json
 ====section 9 ========== 2.41.25
 
 -github.com/basir/amazona/pull/13/files
+-gonna add ProductPage to redux
+	-create Two Actions
+		-PRODUCT_LIST_REQUEST (to fetch data from backend for specific product)
+		-PRODUCT_LIST_SUCCESS (return product data from backend put them in redux store)
+-got error here(failed tp fetch product from api)
+-ahaha solved that error, i use products(correct) insetad of product in productPage.js
+
+
+====section 10 ========== 2.57.30
+
+-github.com/basir/amazona/pull/14/files
+-add quantity input in detail page
+-add to cart btn (redirect to cart page)
+-localhost:3000/cart/1?qty=3
 -
 
 
