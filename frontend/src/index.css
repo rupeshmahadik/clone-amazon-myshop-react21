@@ -74,6 +74,10 @@ a.logo{
 .row.center{
 	justify-content: center;
 }
+.row.top{
+	align-items: flex-start;
+}
+
 
 /*image*/
 img{
@@ -85,6 +89,9 @@ img.medium{
 	max-width: 29rem;
 	width: 100%;
 }
+/*img.large{
+	width:100%;
+}*/
 
 /*card*/
 .card{
@@ -109,6 +116,78 @@ img.medium{
 	color: #f0c040;
 	margin: 0.1rem;
 }
+.rating span:last-child{
+	color: #404040;
+}
+
+/*Product Detail style*/
+
+.col-1{
+	flex: 1 1 10rem;
+}
+.col-2{
+	flex: 2 1;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+li{
+	margin-top: 1rem;
+}
+.success{
+	color: #20a020;
+}
+.error{
+	color: #a02020;
+}
+button{
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #a4a4a4;
+	font-size: 1.6rem;
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+button.primary{
+	background-color: #f0c040;
+}
+button.block{
+	width: 100%;
+}
+.alert{
+	padding: 1rem;
+	border: 0.1rem solid transparent;
+	border-radius: 0.5rem;
+}
+.alert-info{
+	color: #2020a0;
+	background-color: #e0e0ff; 
+}
+.alert-danger{
+	color: #a02020;
+	background-color: #ffe0e0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

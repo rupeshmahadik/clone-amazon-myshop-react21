@@ -1,0 +1,27 @@
+{
+  "name": "Amazona-Clone",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupeshmahadik/clone-amazon-myshop-react21.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupeshmahadik/clone-amazon-myshop-react21/issues"
+  },
+  "homepage": "https://github.com/rupeshmahadik/clone-amazon-myshop-react21#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
