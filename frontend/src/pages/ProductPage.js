@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 // import data from '../data'
 import Rating from '../components/Rating'
 import {Link} from 'react-router-dom'
@@ -15,6 +15,7 @@ const ProductPage = (props) => {
 	const productId = props.match.params.id
 	const productDetails = useSelector((state) => state.productDetails)
 	const {products,loading,error} = productDetails
+	const [qty, setQty] = useState(1)
 
 	useEffect(()=>{
 		dispatch(detailsProduct(productId))
@@ -27,6 +28,10 @@ const ProductPage = (props) => {
 	// src={product.image}
 	// console.log(product.image)
 	// console.log(product.name)
+
+	function addToCartHandler(){
+		props.history.push(`/cart/${productId}?qty=${qty}`)
+	}
 	return (
 		<div>
 		{
@@ -66,9 +71,33 @@ const ProductPage = (props) => {
 									</div>
 								</div>
 							</li>
-							<li>
-								<button className="primary block">Add to Cart</button>
-							</li>
+							{
+								products.countInStock > 0 && (
+									<>
+									<li>
+										<div className="row">
+											<div>Qty</div>
+											<div>
+												<select value={qty} onChange={(e) => setQty(e.target.value)} >
+												{
+													[...Array(products.countInStock).keys()].map(
+														(x) => (
+															<option key={x+1} value={x + 1}> {x + 1}</option>
+															)
+														)
+												}
+												</select>
+											</div>
+										</div>
+									</li>			
+									<li>
+										<button onClick={addToCartHandler} className="primary block">Add to Cart</button>
+									</li>
+									</>
+
+									)
+							}
+							
 						</ul>
 					</div>
 				</div>

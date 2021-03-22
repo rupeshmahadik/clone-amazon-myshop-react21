@@ -146,7 +146,147 @@ to run this delete this in package.json
 -add quantity input in detail page
 -add to cart btn (redirect to cart page)
 -localhost:3000/cart/1?qty=3
--
+-ProductPage.js/CartPage.js/App.js/index.css
+
+
+19 March 2021
+
+====section 11 ========== 3.12.00
+
+-github.com/basir/amazona/pull/15/files
+-add cart items in redux store
+-CART_ADD_ITEM
+-save using localstorage
+-create Add to Cart constants,actions,reducers
+-in components/product.js replace a with Link , in app.js too
+-cartConstant/cartActions/cartReducers/store.js/CartPage.js/Product.js/App.js
+
+
+====section 12 ========== 3.36.30
+
+-github.com/basir/amazona/pull/16/files
+-build CartPage 
+-show cart(image,name,qty,price),delete button,Total
+-proceed to checkout
+-CartPage/index.css/ProductPage/App.js/store.js
+-lil error in this checkout page not dislaying image if we go from product detail page
+
+21 March 2021
+
+====section 13 ========== 3.51.00
+
+-github.com/basir/amazona/pull/17/files
+-CARD_REMOVE_ITEM
+-add delete btn functionality
+-update localStorage
+-create removeFromCard constants,actions,reducers
+-add reducers to store
+-use action in CartPage
+-cartConstants/cartActions/cartReducers/CartPage
+
+====section 14 ========== 4.00.00
+
+-github.com/basir/amazona/pull/18/files
+-connect to mongoDb
+-create mySHop database
+-create user collection
+-put two sample users
+	-admin user
+	-customer user
+-implement API in backend
+	-localhost:5000/api/users/seed
+-npm install mongoose ,connect to mongoose
+-create config.js , npm install dotenv
+-export MONGODB_URL 
+-create models/userModel.js , models/productModel.js
+-create usersSchema ,userModel , create productSchema,productModel
+-create userRoute
+-Seed simple data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
