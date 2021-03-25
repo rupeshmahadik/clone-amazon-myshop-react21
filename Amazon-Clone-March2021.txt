@@ -278,9 +278,6 @@ dumb me ...  (userRouter.js)
 -use actions in SigninPage.js
 -userConstants.js/userActions.js/userReducers.js/store.js/SigninPage.js
 -index.css/app.js/
--"email": "useradmin@test.com",
- "password": "12345"
--
 
 
 
