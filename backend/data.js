@@ -1,8 +1,25 @@
+import bcrypt from 'bcrypt'
+
 const data = {
+	users:[
+	{
+		name:'useradmin',
+		email: 'useradmin@test.com',
+		password: bcrypt.hashSync('12345',8),
+		// password: 12345,
+		isAdmin:true,
+	},
+	{
+		name:'userone',
+		email: 'userone@test.com',
+		password: bcrypt.hashSync('12345',8),
+		// password: 12345,
+		isAdmin:false,
+	},
+	],
 	products: [
 	{
-		_id:'1',
-		name:'Nike Shirt',
+		name:'Nike Plane Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 120,
@@ -13,8 +30,7 @@ const data = {
 		countInStock: 10,
 	},
 	{
-		_id:'2',
-		name:'Polo Shirt',
+		name:'Polo New Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 250,
@@ -25,8 +41,7 @@ const data = {
 		countInStock: 0,
 	},
 	{
-		_id:'3',
-		name:'Nike Shirt',
+		name:'Adidas Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 120,
@@ -37,8 +52,7 @@ const data = {
 		countInStock: 10,
 	},
 	{
-		_id:'4',
-		name:'Nike Shirt',
+		name:'Prada Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 120,
@@ -49,8 +63,7 @@ const data = {
 		countInStock: 10,
 	},
 	{
-		_id:'5',
-		name:'Nike Shirt',
+		name:'Bench Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 120,
@@ -61,8 +74,7 @@ const data = {
 		countInStock: 10,
 	},
 	{
-		_id:'6',
-		name:'Nike Shirt',
+		name:'Elon Shirt',
 		category: 'Shirt',
 		image: './images/p1.jpg',
 		price: 120,

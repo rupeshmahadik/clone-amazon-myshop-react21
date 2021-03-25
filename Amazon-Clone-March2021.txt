@@ -203,7 +203,142 @@ to run this delete this in package.json
 -create userRoute
 -Seed simple data
 
+22 March 2021
 
+-create folder models in backend
+-create seed api to create admin user
+	-create router folder and userRoutes.js fle in it
+-npm install bcrypt
+-https://docs.mongodb.com/manual/installation
+ -community edition
+
+-userModel.js/userRouter.js/data.js/server.js
+-momgoDb cluster password 
+	-admin
+	-12345
+-cluster
+ -databse name - Myshop
+ collection name - users
+
+const connectionstring = 'mongodb+srv://admin:12345@cluster0.zqrug.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+-C:\Program Files\MongoDB\Server\4.2\data\
+-C:\Program Files\MongoDB\Server\4.2\log\
+-https://stackoverflow.com/questions/46523321/mongoerror-connect-econnrefused-127-0-0-127017
+-https://zellwk.com/blog/local-mongodb/#:~:text=To%20connect%20to%20your%20local,databases%20in%20your%20local%20MongoDB.
+
+
+-got duplicate email error in mongodb database
+ (-https://stackoverflow.com/questions/24430220/e11000-duplicate-key-error-index-in-mongodb-mongoose)
+
+25 March 2021
+
+-i was facing this error and wated three days on this but had solution in video itself
+dumb me ...  (userRouter.js)
+-npm install express-async-handler
+-
+
+
+====section 15 ========== 4.23.45
+
+-github.com/basir/amazona/pull/19/files
+-get data from mongodb and not from data.js
+-create models/productModel.js , productSchema,productRoute
+-seed sample data
+-productModels.js/server.js/productRouter.js/data.js
+
+
+-again error in products.map in homepage 
+(https://forum.freecodecamp.org/t/map-is-suddenly-not-a-function/134196)
+-error solved
+
+====section 16 ========== 4.38.00
+
+-github.com/basir/amazona/pull/20/files
+-api for sign in user
+-api/users/signin
+-JSONWebToken
+-npm install jsonwebtoken
+-npm install dotenv
+-utils.js file , .env file
+-userRouter.js/utils.js/server.js/.env
+
+====section 17 ========== 4.55.00
+
+-github.com/basir/amazona/pull/21/files
+-create signin page
+-render email and password fields
+-SigninPage.js/App.js/index.css
+
+====section 18 ========== 5.04.50
+
+-github.com/basir/amazona/pull/22/files
+-create signin constants,actions,reducers
+-update header based on user login
+-use actions in SigninPage.js
+-userConstants.js/userActions.js/userReducers.js/store.js/SigninPage.js
+-index.css/app.js/
+-"email": "useradmin@test.com",
+ "password": "12345"
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
 
 
 
