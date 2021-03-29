@@ -279,6 +279,246 @@ dumb me ...  (userRouter.js)
 -userConstants.js/userActions.js/userReducers.js/store.js/SigninPage.js
 -index.css/app.js/
 
+====section 19 ========== 5.27.40
+
+-github.com/basir/amazona/pull/23/files
+-rigester new user
+-create API for api/user/register
+-insert new user in database
+-return user info and token
+-create reigsterPage
+-Add fields , styele,add page to app.js
+-userRouter.js/userActions.js/userReducers.js/userConstants.js/store.js/app.js/RegisterPage.js/SigninPage.js/LoadingBox.js/index.css
+
+====section 20 ========== 5.44.45
+
+-github.com/basir/amazona/pull/24/files
+-CheckoutSteps.js component
+-create shipping fields
+-implement shipping constant,actions,reducers
+-CheckoutSteps.js/ShippingAddressPage.js/store.js/cartActions.js/cartReducers.js/cartConstants.js/app.js/index.css
+
+
+====section 21 ========== 6.03.33
+
+-github.com/basir/amazona/pull/25/files
+-payment method page
+-create PaymentMethodPage
+-create shipping constant,actions,reducers
+-PaymentMethodPage.js/cartActions.js/cartConstants.js/cartReducers.js/store.js/App.js
+-got thi error
+-Error: Actions must be plain objects. Use custom middleware for async actions.
+-solved
+
+
+====section 22 ========== 6.15.20
+
+-github.com/basir/amazona/pull/26/files
+-create placeholderPage
+-order summery , order action
+-PlaceOrderPage.js/App.js
+
+====section 23 ========== 6.32.00
+
+-github.com/basir/amazona/pull/27/files
+-create Place Order API
+-create orderModel,orderRouter,post order route
+-orderModels.js/orderRouter.js/server.js/utils.js
+
+
+====section 24 ========== 6.51.00
+
+28 March 2021
+
+-github.com/basir/amazona/pull/28/files
+-PlaceOrder action
+-place order button click
+-place order constants,action and reducer
+-PlaceOrderPage.js/orderActions.js/orderConstants.js/orderReducers.js/cartReducers.js/store.js/cartConstants.js
+
+
+====section 25 ========== 7.08.30
+
+-github.com/basir/amazona/pull/29/files
+-implement order detail page
+-build an api /api/orders/:id
+-create OrderPage.js
+-dispatch order details action in useEffect
+-load data with useSelector
+-show data like place order page
+-create order detail constants,action,reducer
+-orderRouter.js/orderActions.js/orderReducers.js/orderConstants.js/
+-OrderPage.js/App.js/store.js
+
+//////////////////////////////////////Left////////////////////////////////////////////////////////
+
+====section 26 ========== 7.28.00
+
+-github.com/basir/amazona/pull/30/files
+-get client id from paypal
+-set it in .env file
+-npm install react-paypal-button-v2 ((in frontend folder))
+-server.js/orderReducers.js/OrderPage.js
+-left this midway as dont have paypal accont , will do later
+
+====section 27 ========== 7.41.30
+
+-github.com/basir/amazona/pull/31/files
+-update payment to paid
+-
+
+====section 28 ========== 7.59.30
+
+-github.com/basir/amazona/pull/32/files
+-order history page
+-create customer order  api
+-create api for getMyOrders
+-show orders in ProfilePage
+-style orders
+-OrderHistoryPage.js/orderConstants.js/orderActions.js/orderReducers.js/store.js/App.js/orderRouter.js/index.css
+
+
+====section 29 ========== 8.20.10
+
+-github.com/basir/amazona/pull/33/files
+-create user detail API
+-show user information
+-userRouter.js/ProfilePage.js/App.js/userActions.js/userConstants.js/userReducers.js/store.js
+-added new file jsconfig.json (in frontend file)
+
+
+====section 30 ========== 8.38.50
+
+-github.com/basir/amazona/pull/34/files
+-update user profile
+-create user update API
+-update user info
+-ProfilePage.js/userActions.js/userConstants.js/userReducers.js/store.js
+-userRouter.js/PrivateRoute.js (new component )/App.js
+
+====section 31 ========== 9.00.40
+
+-github.com/basir/amazona/pull/35/files
+-create Admin Menu
+-create admin middleware in backend
+-create adminRoute in Frontend
+-App.js/AdminRoute.js/utils.js
+
+===============PART ONE ENDED===================
+
+====section 32 ========== 
+
+-github.com/basir/amazona/pull/36/files
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

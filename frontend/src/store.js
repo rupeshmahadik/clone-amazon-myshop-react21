@@ -3,13 +3,17 @@ import thunk from 'redux-thunk'
 // import data from './data'
 import {productListReducer,productDeatilsReducer} from './reducers/productReducers'
 import {cartReducer} from './reducers/cartReducers'
-import {userSigninReducer} from './reducers/userReducers'
+import {userSigninReducer,userRegisterReducer,userDetailsReducer,userUpdateProfileReducer} from './reducers/userReducers'
+import {orderCreateReducer,orderDetailsReducer,orderMineListReducer} from './reducers/orderReducers'
+
 const intialstate = {
 	userSignin: {
 		userInfo: localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null 
 	},
 	cart:{
 		cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [],
+		shippingAddress: localStorage.getItem('shippingAddress') ? JSON.parse(localStorage.getItem('shippingAddress')) : {},
+		paymentMethod: 'PayPal',
 	}
 }
 // const reducer = (state,action) =>{
@@ -21,6 +25,12 @@ const reducer = combineReducers({
 	productDetails: productDeatilsReducer,
 	cart: cartReducer,
 	userSignin: userSigninReducer,
+	userRegister: userRegisterReducer,
+	orderCreate: orderCreateReducer,
+	orderDetails: orderDetailsReducer,
+	orderMineList: orderMineListReducer,
+	userDetails: userDetailsReducer,
+	userUpdateProfile: userUpdateProfileReducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose ;

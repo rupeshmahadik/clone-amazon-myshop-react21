@@ -165,6 +165,9 @@ button.primary{
 button.block{
 	width: 100%;
 }
+button.small{
+	font-size: 1.2rem;
+}
 .alert{
 	padding: 1rem;
 	border: 0.1rem solid transparent;
@@ -211,7 +214,7 @@ img.small{
 
 .form label{
 	margin: 1rem 0;
-	display: block;
+	/*display: block;*/
 }
 
 /*Dropdown menu*/
@@ -235,6 +238,58 @@ img.small{
 .dropdown:hover .dropdown-content{
 	display: block;
 }
+
+.loading{
+	display: block !important;
+}
+
+
+/*checkout steps*/
+.checkout-steps > div {
+	border-top: 0.3rem #c0c0c0 solid;
+	color: #c0c0c0;
+	flex: 1;
+	padding: 1rem;
+	font-weight: bold;
+}
+.checkout-steps > div.active {
+	border-top-color: #f08000;
+	color: #f08000;
+}
+
+/*table*/
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

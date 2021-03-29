@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 import userRouter from './routers/userRouter.js'
 import productRouter from './routers/productRouter.js'
 import dotenv from 'dotenv'
+import orderRouter from './routers/orderRouter.js'
 
 dotenv.config()
 
@@ -25,7 +26,11 @@ app.get('/',(req,res)=>{
 
 app.use('/api/users',userRouter)
 app.use('/api/products',productRouter)
+app.use('/api/orders',orderRouter)
 
+// app.get('/api/config/paypal', (req, res) => {
+//   res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
+// });
 // get rid of this data as we are gonna get data from mongodb - section 15
 
 // app.get('/api/products/:id', (req,res)=>{
